@@ -35,7 +35,7 @@ extern "C" {
 #define WEBP_ANDROID_NEON  // Android targets that might support NEON
 #endif
 
-#if defined(__ARM_NEON__) || defined(WEBP_ANDROID_NEON)
+#if defined(_ARM_ARCH_7) || defined(WEBP_ANDROID_NEON)
 #define WEBP_USE_NEON
 #endif
 
